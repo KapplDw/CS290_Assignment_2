@@ -1,3 +1,165 @@
 /*
  * Add your CSS styles to this file.
  */
+
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #eeeeee;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+    cursor: pointer;
+}
+
+a:hover{
+    color:#309df7
+}
+
+
+/*
+ * Title
+ */
+
+h1.site-title {
+    background-color:#309df7;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    font-weight: lighter;
+    
+}
+
+
+/* 
+ * Nav Bar
+ */
+
+ .navlist {
+    list-style: none;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+}
+
+.navbar {
+    width: 100%;
+    background-color: white;
+    margin: 0;
+}
+
+.navitem {
+    font-size: 22px;
+    padding: 10px;
+    
+}
+
+.active {
+    border-bottom: 4px solid #309df7;
+}
+
+.navbar-search {
+    float: right;
+}
+
+#navbar-search-input {
+    font-size: 20px;
+    background-color: #eeeeee;
+    border-radius: 2px;
+}
+
+#navbar-search-input:focus {
+    background-color: white;
+}
+
+#navbar-search-button {
+    font-size: 20px;
+    border: none;
+}
+
+#navbar-search-button:hover {
+    color:#309df7
+}
+
+
+
+ 
+/*
+ * Body
+ */
+ 
+
+ 
+.twit-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 50px;
+    margin: 0 100px;
+    padding-right: 10px;
+}
+
+.twit-content {
+    width: 100%;
+}
+
+article.twit {
+    background-color: white;
+    display: inline-flex;
+    padding: 15px;
+    margin: 2px;
+    flex-basis: 30%;
+    flex-shrink: 1;
+    border: 1px solid #e1e1e1;
+    border-radius: 2px;
+}
+
+.twit-icon {
+    font-size: 24px;
+    padding: 4px;
+}
+
+.twit-text {
+    padding: 0 10px;
+    margin: 2px;
+}
+
+
+
+p.twit-author {
+    margin-top: 4px;
+    float: right;
+    font-weight: bold;
+}
+
+
+
+/*
+ * Button
+ */
+
+#create-twit-button {
+
+    font-size: 35px;
+    float: right;
+    border-radius: 50%;
+    color: white;
+    background-color: red;
+    margin: 30px;
+    padding: 12px;
+    box-shadow: 4px 4px rgba(220,220,220, .5);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+#create-twit-button:hover {
+    background-color: #309df7;
+    padding: 14px;
+    cursor: pointer;
+}
